@@ -46,7 +46,7 @@
                 </div>
                 <div class="our-link">
                     <ul>
-                        <li><a href="#"><i class="fa fa-cart-plus"></i> Cart</a></li>
+                        <li><a href="/cart"><i class="fa fa-cart-plus"></i> Cart</a></li>
                         @if(empty(Auth::check()))
                         <li><a href="{{url('/login-register')}}"><i class="fa fa-lock"></i> Login</a></li>
                         @else

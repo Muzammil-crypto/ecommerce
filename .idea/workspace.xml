@@ -21,6 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b492cf33-1b78-401d-a927-d0ef0f73b183" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/wayshop/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wayshop/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/wayshop/products/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/wayshop/products/cart.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +195,7 @@
       <workItem from="1601780222467" duration="468000" />
       <workItem from="1601781270991" duration="7372000" />
       <workItem from="1602294282867" duration="8009000" />
-      <workItem from="1602381552449" duration="2429000" />
+      <workItem from="1602381552449" duration="7012000" />
     </task>
     <servers />
   </component>
@@ -284,6 +287,10 @@
       <screen x="0" y="31" width="1600" height="869" />
     </state>
     <state x="0" y="31" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog/0.31.1600.869@0.31.1600.869" timestamp="1601719940139" />
+    <state x="490" y="66" width="620" height="804" key="find.popup" timestamp="1602388055275">
+      <screen x="0" y="31" width="1600" height="869" />
+    </state>
+    <state x="490" y="66" width="620" height="804" key="find.popup/0.31.1600.869@0.31.1600.869" timestamp="1602388055275" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Way_Shop@phpunit_xml.xml" NAME="phpunit.xml Coverage Results" MODIFIED="1601718588574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

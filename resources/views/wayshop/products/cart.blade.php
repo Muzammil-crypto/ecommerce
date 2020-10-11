@@ -11,7 +11,7 @@
                <strong>{!! session('flash_message_error') !!}</strong>
             </div>
             @endif
-            
+
             @if(Session::has('flash_message_success'))
             <div class="alert alert-sm alert-success alert-block" role="alert">
                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -45,7 +45,7 @@
 								</a>
                                     </td>
                                     <td class="name-pr">
-                                        
+
 									{{$cart->product_name}}
                                     <p>{{$cart->product_code}} | {{$cart->size}}</p>
                                     </td>
@@ -80,7 +80,8 @@
                 <div class="col-lg-6 col-sm-6">
                     <div class="coupon-box">
                         <form action="{{url('/cart/apply-coupon')}}" method="post"> {{csrf_field()}}
-                        <div class="input-group input-group-sm">
+                        @csrf
+                            <div class="input-group input-group-sm">
                             <input class="form-control" placeholder="Enter your coupon code" name="coupon_code" aria-label="Coupon code" type="text">
                             <div class="input-group-append">
                                 <button class="btn btn-theme" type="submit">Apply Coupon</button>
@@ -114,7 +115,7 @@
                             <div class="ml-auto h5"> PKR  <?php echo $total_amount; ?> </div>
                         </div>
                         @endif
-                      
+
                     </div>
                     <div class="col-12 d-flex shopping-box"><a href="checkout.html" class="ml-auto btn hvr-hover">Checkout</a>
                     </div>

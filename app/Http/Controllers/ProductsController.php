@@ -10,7 +10,7 @@ use App\Products;
 use App\Category;
 use App\ProductsAttributes;
 use App\ProductsImages;
-//use App\Coupons;
+use App\Coupons;
 use DB;
 use Session;
 class ProductsController extends Controller
@@ -270,7 +270,7 @@ class ProductsController extends Controller
             $userCart[$key]->image = $productDetails->image;
         }
         // echo "<pre>";print_r($userCart);die;
-        //useless comment
+        // useless comment
         return view('wayshop.products.cart')->with(compact('userCart'));
     }
     public function deleteCartProduct($id=null){
@@ -290,7 +290,7 @@ class ProductsController extends Controller
         Session::forget('CouponCode');
         if($request->isMethod('post')){
             $data = $request->all();
-            // echo "<pre>";print_r($data);die;
+//             echo "<pre>";print_r($data);die;
             $couponCount = Coupons::where('coupon_code',$data['coupon_code'])->count();
             if($couponCount == 0){
                 return redirect()->back()->with('flash_message_error','Coupon code does not exists');
